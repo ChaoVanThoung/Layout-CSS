@@ -1,0 +1,48 @@
+*{
+    box-sizing: border-box;
+}
+.container {
+    /* height: 100vh; */
+    display: flex;
+    justify-content: space-around;
+    /* align-items: end; */
+    align-content: start;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card{
+    background-color: red;
+    /* width: calc((100% - (20px * 3)) / 4); */
+    flex: 1 1 calc((100% - (20px * 3)) / 4);
+    /* width: 200px; */
+    height: 200px;
+}
+
+.flex-container{
+    /* width: 40%; */
+    display: flex;
+    border: 1px solid purple;
+    /* padding: 10px; */
+}
+.item{
+    height: 50px;
+    /* background-color: aqua; */
+}
+.item1{
+    /* width: 600px; */
+    flex-basis: 400px;
+    background-color: pink;
+}
+.item2{
+    /* width: 500px; */
+    flex-basis:400px;
+    background-color: gold;
+}
+.item3{
+    /* flex-grow: 1; */
+    /* width: 700px ; */
+    flex-basis: 700px;
+    flex-shrink: 1;
+    background-color: chartreuse;
+}
