@@ -9,6 +9,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
+    <!-- AOE -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   <body>
     <!-- header -->
@@ -36,7 +38,7 @@
       <section>
         <!-- title -->
         <div class="title">
-          <h1>Most Pupular Course</h1>
+          <h1 id="title" style="height: 50px;" ></h1>
           <p>Chooses from hundred of specialist Organizations</p>
         </div>
         <!-- type -->
@@ -51,7 +53,7 @@
         </div>
         <!--course card  -->
         <div class="container-card">
-          <div class="card card1">
+          <div class="card card1" data-aos="zoom-in-up" >
             <div class="container-image">
               <img
                 src="https://www.yourdecoration.co.uk/cdn/shop/files/Poster-God-Of-War-Key-Art-91-5x61cm-Abystyle-GBYDCO513.jpg?v=1721811407"
@@ -99,7 +101,7 @@
               </div>
             </div>
           </div>
-          <div class="card card2">
+          <div class="card card2" data-aos="zoom-in-up">
             <div class="container-image">
               <img
                 src="https://static.toiimg.com/thumb/msid-112060282,width-1280,height-720,resizemode-4/112060282.jpg"
@@ -147,7 +149,7 @@
               </div>
             </div>
           </div>
-          <div class="card card3">
+          <div class="card card3" data-aos="zoom-in-up">
             <div class="container-image">
               <img
                 src="https://c4.wallpaperflare.com/wallpaper/332/228/7/1920x1080-px-action-arena-battle-dota-fantasy-fighting-mmo-online-poster-warrior-nature-lakes-hd-art-wallpaper-preview.jpg"
@@ -195,7 +197,7 @@
               </div>
             </div>
           </div>
-          <div class="card card4">
+          <div class="card card4" data-aos="zoom-in-up">
             <div class="container-image">
               <img
                 src="https://www.candb.com/site/candb/images/artwork/elden-ring_bandai-namco.jpg"
@@ -243,7 +245,7 @@
               </div>
             </div>
           </div>
-          <div class="card card5">
+          <div class="card card5" data-aos="zoom-in-up">
             <div class="container-image">
               <img
                 src="https://www.bluedogposters.com.au/cdn/shop/collections/Minecraft_posters_online_750x.progressive.jpg?v=1688105706"
@@ -291,7 +293,7 @@
               </div>
             </div>
           </div>
-          <div class="card card6">
+          <div class="card card6" data-aos="zoom-in-up">
             <div class="container-image">
               <img
                 src="https://www.fakaheda.eu/images/product_medias/it-takes-two.jpg"
@@ -339,7 +341,7 @@
               </div>
             </div>
           </div>
-          <div class="card card7">
+          <div class="card card7" data-aos="zoom-in-up">
             <div class="container-image">
               <img
                 src="https://myhotposters.com/cdn/shop/files/mL7396_1024x1024.jpg?v=1729362189"
@@ -387,7 +389,7 @@
               </div>
             </div>
           </div>
-          <div class="card card8">
+          <div class="card card8" data-aos="zoom-in-up">
             <div class="container-image">
               <img
                 src="https://i0.wp.com/www.nerdsandbeyond.com/wp-content/uploads/2023/06/eae0a766487e0397c79e5ce2b57e07d8ab8a4e7b.webp?fit=800%2C450&ssl=1"
@@ -472,4 +474,21 @@
       </div>
     </footer>
   </body>
+  <!-- Link typed JS -->
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script>
+    var typed = new Typed('#title', {
+      strings: ["Welcome to My Website", "Discover Amazing Features", "Enjoy Your Visit!", "Most Popular Games"],
+      typeSpeed: 100, 
+      backSpeed: 50, 
+      backDelay: 1000, 
+      // loop: true,
+      showCursor: false 
+    });
+  </script>
+  <!-- Link AOE -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </html>
